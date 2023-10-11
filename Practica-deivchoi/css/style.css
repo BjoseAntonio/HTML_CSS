@@ -1,0 +1,344 @@
+:root{
+    --font_titulos: 'Lora', serif;
+    --font_list: 'Press Start 2P', cursive;
+    --font_p: 'Bitter', serif;
+    --logo: 'Rubik Iso', cursive;
+    --color: #0E21A0;
+    --color2: #5a39c9;
+    --color2btn: #3e209e;
+    --color3: #9D44C0;
+    --color4: #EC53B0; 
+    --color5: #6f8859;
+    --color6: #9EB384;
+    --color7: #e2eed4;
+    --font: #fff;
+    --font2: #000;
+    --fondo-sect: #1f1e1e;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font_titulos);
+    /* background-color: rgb(255, 255, 255); */
+    background-color: var(--color7);
+
+}
+
+/* Globales */
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+h1, h2, h3{font-family: var(--font_titulos);}
+p{
+    font-size: 1.25em;
+    font-family: var(--font_p);
+}
+
+p.logo, span.logo{
+    font-family: var(--font_p);
+    
+}
+
+ul{
+    list-style: none;
+    font-family: var(--font_p);
+}
+
+.btn{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    background-color: var(--color2);
+    color: var(--font);
+}
+
+.btn:hover{
+    background-color: var(--color2btn);
+    cursor: pointer;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Header */
+.header{
+    background-color: var(--color5);
+}
+
+.header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .container-logo-img{
+    /* background-color:bisque ; */
+    padding: 0px 12px;
+    display: flex;
+    
+}
+
+.header .logo-img{
+    width: 120px;
+    height: 80px;
+}
+
+.header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: var(--font);
+    font-size: 1.5em;
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.05em;
+}
+
+.header a{
+    padding: 5px 12px;
+    color: var(--font2);
+    font-weight: bold;
+
+}
+.header a, #hero a{
+    text-decoration: none;
+}
+
+.header a:hover{
+    color: var(--color2);
+    cursor: pointer;
+}
+/* Hero */
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh; /*altura*/
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: var(--font);
+
+}
+@media (max-width:720px){
+    #hero h1{
+        font-size: 3em;
+    }
+}
+
+#hero a{
+    color: var(--font);
+}
+
+/* Quienes somos */
+/* #container-somos{
+
+} */
+
+#container-somos .container, #Proceso-citas .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#container-somos .container .inf-somos{
+    color: var(--color2);
+}
+
+/*Etapas de analisis */
+#nuestros-programas{
+    background-color: var(--fondo-sect);
+    color: var(--font);
+    text-align: center;
+}
+
+#nuestros-programas .container{
+  padding: 50px 5px;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .cart{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 12px;
+}
+
+/* linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
+.cart:first-child{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url(../img/prevencion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;padding-bottom: 50px;
+}
+
+.cart:nth-child(2){
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/diagnostico.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding-bottom: 50px;
+}
+
+.cart:nth-child(3){
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/tratamientos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 50px;
+}
+
+/* Proceso de citas */
+#Proceso-citas .span-li{
+    font-family: var(--font_list);
+    font-size: 0.7em;
+}
+
+
+/* Agradecimiento */
+#agradecimiento{
+    background-color: var(--color5);
+}
+
+#agradecimiento h2{
+    font-size: 8vw;
+    margin: 0;
+    
+}
+
+
+/* footer */
+.footer{
+    background-color: var(--color5);
+    padding: 5px 0px 10px 0px;
+}
+
+.footer .container{
+    display: flex;
+    justify-content:center;
+    align-items: end;
+}
+
+.footer p{
+    color: var(--font);
+    margin-bottom: 0;
+}
+
+@media (min-width:720px) {
+    .header{
+        position: fixed;
+        width: 100%;
+    }
+
+    .header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    /* Somos */
+    /* #container-somos{
+
+    } */
+
+    #container-somos .img-container{
+        background-image: url(../img/presentacion.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #container-somos .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+
+    }
+
+    #container-somos .texto{
+        /* max-width: 600px; */
+        text-align: initial;
+        /* padding: 0px 15px; */
+        margin: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nuestros-programas .programas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #nuestros-programas p{
+        display: block;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0px;
+    }
+
+    #nuestros-programas .cart{
+        padding: 30px;
+        background-size: 100% 150px;
+        background-position-y: 0;
+        background-color: rgba(50, 50,50,0.5);
+        box-shadow: 2px 0.5;
+    }
+
+    .cart:first-child{
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url(../img/prevencion-copia.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;padding-bottom: 50px;
+    }
+    
+    .cart:nth-child(2){
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/diagnostico-copia.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        padding-bottom: 50px;
+    }
+    
+    .cart:nth-child(3){
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/tratamientos-copia.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-bottom: 50px;
+    }
+}
+

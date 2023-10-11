@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- charset no permite decir que los caracteres que trabares son latinos -->
+    <meta charset="UTF-8"> 
+    <!-- name = nombrar el metadato como el autor de la pagina con name
+     content = descripcion de la pagina 'tutorial web' o el nombre de autor-->
+    <meta name="jose" content="Desarollodor web">
+    <meta name="descripcion" content="Toturiales sobre desarrollo web con html, css y js">
+    <meta name="keywords" content="tutorial, html, css, js, desarrollo web">
+    <title>Desarrollo web| Aprende practicando</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <!-- logo -->
+        <div class="div__logo">
+            <img src="img/logo.jpeg" alt="logo" class="img__logo">
+            
+        </div>
+
+        <div class="div__redes">
+            <!-- Redes sociales -->
+            <a href="#"> 
+                <img src="img/facebook.png" alt="facebook" class="img__redes">
+            </a>
+            <a href="#"> 
+                <img src="img/instagram.png" alt="instagram" class="img__redes">
+            </a>
+            <a href="#"> 
+                <img src="img/twitter.png" alt="twitter" class="img__redes">
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <!-- Navegadores -->
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Tienda virtual</a>
+        <a href="#">Contacto</a>
+
+    </nav>
+
+    <article class="article">
+        <!-- Creando  -->
+        <div class="div__article__Img">
+            <img src="img/camisa.jpeg" alt="noticia" class="slider">
+            <p class="description__article">camisas</p>
+        </div>
+
+        <div class="div__article__Img">
+            <img src="img/gorra.jpeg" alt="noticia" class="slider">
+            <p class="description__article">Gorras</p>
+        </div>
+
+        <div class="div__article__Img">
+            <img src="img/pantalonn.jpeg" alt="noticia" class="slider">
+            <p class="description__article">Pantalones</p>
+        </div>
+      
+        <div class="div__article__Img">
+            <img src="img/sueter.png" alt="noticia" class="slider">
+            <p class="description__article">Sueter</p>
+        </div>
+    </article>
+
+    <div class="contenido">  
+        <section class="section">
+            <div>
+                <h2>Ropa exclusiva de <span>PIN-guin</span></h2>
+                <p>parrafo <b>incluido con etiqueta b</b>, y<br> tambien br</p> 
+            </div>
+        
+            <div>
+                <h3>Crear tablas</h3>
+                <div>
+                    <table border="1">
+                        <!-- tr son filas -->
+                        <tr> 
+                            <!-- th Columnas -->
+                            <th>columa1</th>
+                            <th>columa2</th>
+                            <th>columa3</th>
+
+                        </tr>
+                        <tr> 
+                            <!-- th Columnas -->
+                            <td>col1 f2</td>
+                            <td>col2 f2</td>
+                            <td>col3 f2</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        <div>
+            <br>
+            <br>
+            <h3>Formulario</h3>
+            <form action="">
+                <label for="nombre">nombre</label>
+                <input id="nombre" type="text" placeholder="nombre">
+                <br>
+                <input type="checkbox" id="rojo"><label for="rojo">rojo</label>
+                <input type="checkbox" id="blanco"><label for="blanco">blanco</label>
+                <br>
+                <input type="radio" id="no" name="objetoRadio"><label for="no">no</label>
+
+                <input type="radio" id="si" name="objetoRadio"><label for="si">si</label>
+
+                <br>
+                <select name="" id="">
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+        </section>
+
+        <aside class="aside">
+            <h3>Lista numerica</h3>
+            <ol>
+                <li>lista1</li>
+                <li>lista2</li>
+                <li>lista3</li>
+            </ol>
+
+            <h3>Lista no numerica</h3>
+            <ul>
+                <li>lista1</li>
+                <li>lista2</li>
+                <li>lista3</li>
+            </ul>
+
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="div__redes">
+            <!-- Redes sociales -->
+            <a href="#"> 
+                <img src="img/facebook.png" alt="facebook" class="img__redes">
+            </a>
+            <a href="#"> 
+                <img src="img/instagram.png" alt="instagram" class="img__redes">
+            </a>
+            <a href="#"> 
+                <img src="img/twitter.png" alt="twitter" class="img__redes">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

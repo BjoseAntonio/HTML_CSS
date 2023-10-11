@@ -1,0 +1,15 @@
+:root{
+    --fondo-convertidor: #222222;
+    --color-barra-entrada: #575757;
+    --color-texto: #FFFFFF;
+    --color-barra-texto: #333333;
+    --fondo1: #FCFAFC;
+    --fondo2: #A26576;
+}
+
+body{
+    background-color: var(--fondo-convertidor);
+}
+h2, p{
+    color: var(--color-texto);
+}
