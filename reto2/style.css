@@ -1,5 +1,9 @@
 :root{
-    --color-primario: ;
+    --color-card1: #82A0D8 ;
+    --color-card2: #D71313 ;
+    --color-card3: #219C90 ;
+    --color-card4: #FFCD4B ;
+    --text: 'Roboto', sans-serif;
 }
 
 body{
