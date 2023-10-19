@@ -7,10 +7,24 @@
 }
 
 body{
+    background-color: black;
+    color: aliceblue;
     text-align: center;
-    background-color: var(--color-card2);
-    margin-bottom: 5px;
+    font-weight: 400;
 }
+
+.main-title{
+    display: block;
+    font-size: 2.5rem;
+}
+
+.subtitle{
+    width: 30%;
+    color: #D71313;
+
+}
+
+
 
 
 .card__img{
