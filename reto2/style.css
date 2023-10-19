@@ -4,6 +4,7 @@
     --color-card3: #219C90 ;
     --color-card4: #FFCD4B ;
     --text: 'Roboto', sans-serif;
+    --text2: 'Poppins', sans-serif;
 }
 
 *{
@@ -14,6 +15,7 @@ body{
     text-align: center;
     font-weight: 400;
     background-color: hsl(0, 0%, 93%);
+    font-family: var(--text2);
 
 }
 
@@ -23,8 +25,15 @@ body{
 }
 
 .text-thin{
-    color: gray;
     font-weight: 200;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+.text-light{
+    color: hsl(229, 6%, 66%);
 }
 
 
@@ -64,6 +73,7 @@ body{
     border-radius: 10px;
     box-shadow: 5px 10px 10px hsl(240, 25%, 30%);
     padding: 0 2em;
+    font-size: 0.9rem;
 }
 
 .card--left{
