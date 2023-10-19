@@ -4,4 +4,9 @@
 
 body{
     text-align: center;
+    font-weight: 400;
+}
+
+.main-title{
+    display: block;
 }
