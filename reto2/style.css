@@ -6,11 +6,15 @@
     --text: 'Roboto', sans-serif;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
-    background-color: black;
-    color: aliceblue;
     text-align: center;
     font-weight: 400;
+    background-color: hsl(0, 0%, 93%);
+
 }
 
 .main-title{
@@ -18,13 +22,92 @@ body{
     font-size: 2.5rem;
 }
 
+.text-thin{
+    color: gray;
+    font-weight: 200;
+}
+
+
 .subtitle{
-    width: 30%;
-    color: #D71313;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-size: 1.5rem; */
 
 }
 
 .card__img{
     width: 3rem;
     height: 3rem;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+}
+
+.cards{
+    position: relative;
+    width: 1200px;
+    height: 550px;
+    margin: 5em auto;
+}
+
+.card__title,
+.card__text{
+    text-align: left;
+}
+
+.card{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-color: hsl(0, 0%, 93%);
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px hsl(240, 25%, 30%);
+    padding: 0 2em;
+}
+
+.card--left{
+    left: 0;
+    /* top: 150px; */
+}
+
+.card--red{
+    border-top: 5px solid var(--color-card2);
+}
+
+.card--left, 
+.card--right{
+    top: 150px;
+}
+
+.card--top{
+    top: 0;
+    /* left: 425px; */
+}
+
+.card--cyan{
+    border-top: 5px solid var(--color-card3);
+}
+
+.card--top,
+.card--bottom{
+    left: 425px;
+}
+
+.card--right{
+    right: 0;
+    /* top: 150px; */
+}
+
+.card--blue{
+    border-top: 5px solid var(--color-card1);
+}
+
+.card--bottom{
+    bottom: 0;
+    /* left: 425px; */
+}
+
+.card--purple{
+    border-top: 5px solid var(--color-card4);
 }
