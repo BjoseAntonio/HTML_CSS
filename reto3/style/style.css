@@ -1,0 +1,16 @@
+:root{
+    --color_fondo: #232D3F;
+    --color__card1: #4D4C7D;
+    --color__card1: #CD5C08;
+    --color__card1: #1AACAC;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
