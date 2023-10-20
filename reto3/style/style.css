@@ -1,8 +1,8 @@
 :root{
     --color_fondo: #232D3F;
     --color__card1: #4D4C7D;
-    --color__card1: #CD5C08;
-    --color__card1: #1AACAC;
+    --color__card2: #CD5C08;
+    --color__card3: #1AACAC;
 }
 
 *{
@@ -12,5 +12,23 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: ;
+    background-color: var(--color_fondo);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin: 8rem 2rem;
+    background-color: aliceblue;
+}
+
+.card{
+     background-color: #1AACAC;
+     margin: 0 .5rem;
+     width: 100%;
+     height: 25rem;
+}
+
+.card__boton{
+    
 }
