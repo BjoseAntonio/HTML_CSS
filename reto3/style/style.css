@@ -3,6 +3,10 @@
     --color__card1: #4D4C7D;
     --color__card2: #CD5C08;
     --color__card3: #1AACAC;
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark_cyan:  hsl(129, 100%, 13%);
+    --letras: font-family: 'Roboto Mono', monospace;;
 }
 
 *{
