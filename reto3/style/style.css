@@ -1,8 +1,13 @@
 :root{
     --color_fondo: #232D3F;
     --color__card1: #4D4C7D;
-    --color__card1: #CD5C08;
-    --color__card1: #1AACAC;
+    --color__card2: #CD5C08;
+    --color__card3: #1AACAC;
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark_cyan:  hsl(179, 100%, 13%);
+    --letras: font-family: 'Roboto Mono', monospace;
+    --blacno_texto: hsl(0 0% 100% / 0.75);
 }
 
 *{
@@ -11,6 +16,71 @@
 
 body{
     margin: 0;
-    padding: 0;
-    font-family: ;
+    text-align: center;
 }
+
+.cards{
+  width: 90%;
+  height: 500px;
+  margin: 200px auto;
+  font-size: 0;
+}
+
+.card{
+    display:  inline-block;
+    width: 300px;
+    text-align: left;
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 2em;
+    font-size: 1rem;
+    color: var(--blacno_texto);
+    font-family: var(--letras);
+    font-weight: 400;
+    position: relative;
+     
+}
+
+.card__title{
+    font-family: var(--letras);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.card__description{
+    width: 200px;
+}
+
+.card--orange{
+    background-color: var(--orange);
+}
+
+.card--cyan{
+    background-color: var(--cyan);
+}
+
+.card--darkCyan{
+    background-color: var(--dark_cyan);
+}
+
+.card__cta{
+    padding: 0.7em 2em;
+    background-color: #fff;
+    border-radius: 1.2em;
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px;
+}
+
+.card__cta--orange{
+ color: var(--orange);
+}
+
+.card__cta--cyan{
+    color: var(--cyan);
+}
+
+.card__cta--darkCyan{
+    color: var(--dark_cyan);
+}
+
