@@ -1,6 +1,21 @@
 body{
-    background-color: gray;
     margin: 0;
     padding: 0;
 }
+
+
+.header{
+    background-color: lightcoral;
+    display: grid;
+
+}
+
+.portada .imagen{
+    background-image: url(img/fondo.jpg);
+    background-size: 23rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
