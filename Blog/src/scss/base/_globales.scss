@@ -1,0 +1,62 @@
+@use '../base/variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+    background-color: v.$azul_cielo;
+    color: v.$negro;
+    font-family: v.$fuente_principal;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+p{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+
+h1,h2,h3{
+    text-transform: uppercase;
+    margin: 0 0 5rem 0;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 6rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedor{
+    max-width: 95%;
+    width: 120rem;
+    margin: 0 auto;
+}
