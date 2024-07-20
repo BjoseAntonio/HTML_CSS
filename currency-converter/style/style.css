@@ -1,5 +1,5 @@
 :root{
-    --fondo-convertidor: #222222;
+    --fondo-convertidor: #020617;
     --color-barra-entrada: #575757;
     --color-texto: #FFFFFF;
     --color-barra-texto: #333333;
@@ -7,9 +7,166 @@
     --fondo2: #A26576;
 }
 
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body{
     background-color: var(--fondo-convertidor);
 }
+
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
 h2, p{
-    color: var(--color-texto);
+    color: var(--fondo-convertidor);
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contenido{
+    margin: 15rem auto;
+}
+.contenido:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #60efff 0%, #0061ff 100% );
+    transform: translate3d(0px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.contenido::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+
+ /* Formulario        */
+
+ .formulario{
+    background: linear-gradient(-45deg, #60efff 0%, #0061ff 100% );
+    border-radius: 2rem;
+    height: 30rem;
+    padding: 2rem 1rem;
+    border: 1px dotted black; /*dashed*/
+ }
+
+ .formulario fieldset{
+    border: none;
+ }
+
+ .legend{
+    text-align: center;
+    font-size: 3rem;
+ }
+
+ .campos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem
+ }
+
+ .campo{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+ }
+
+ .campo p{
+    font-size: 2rem;
+    margin: 0;
+ }
+
+.campo__opciones{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: .5rem;
+    appearance: none;
+    cursor: pointer;
+ } 
+
+ .campo--convertir .boton__cambio{
+    margin: 1rem 0;
+    cursor: pointer;
+ }
+
+ img{
+    height: 5rem;
+    width: 5rem;
+  }
+ .input{
+    margin-top: .8rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    text-align: center;
+
+ }
+
+ .boton--elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .boton{
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    padding: .5rem;
+    width: 50%;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: gray;
+    color: white;
 }

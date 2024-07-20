@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cunrrency Converter</title>
 
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="contenedor">
-        <h2>currency converter</h2>
+    <div class="container contenido">
 
-        <form action="">
-            <p>Enter amount</p>
-            <input type="text" placeholder="1000">
-            <p>From</p>
-            <input type="option">
+        <form class="formulario">
+            <fieldset>
+                <legend class="legend">
+                    currency converter
+                </legend>
+                <div class="campos">
 
-            <p>to</p>
+                    <div class="campo">
+                        <p>Ingrese la cantidad</p>
+                        <input type="number" placeholder="cantidad $0000" id="cantidad_Monetaria" class="input">
+                    </div>
+                    <div class="campo campo--convertir">
+                        <select class="campo__opciones">
+                            <option selected disabled>--Seleccione--</option>
+                            <option value="">MX</option>
+                            <option value="">Euros</option>
+                        </select>
+                        <p class="boton__cambio">
+                            <img src="iconos/reverse_n.svg" alt="">
+                        </p>
+                        <select class="campo__opciones">
+                            <option selected disabled>--Seleccione--</option>
+                            <option value="">MX</option>
+                            <option value="">Euros</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <p>Resultado</p>
+                        <input type="option"  class="input">
+                    </div>
+                </div>
+
+                <div class="boton--elemento">
+                    <input type="submit" value="CONVERTIR" class="boton">
+                </div>
+            </fieldset>
         </form>
 
     </div>

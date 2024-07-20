@@ -1,0 +1,136 @@
+body {
+  background: rgb(253, 108, 42);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 108, 42, 1) 4%,
+    rgba(29, 209, 240, 1) 17%,
+    rgba(106, 11, 89, 1) 49%,
+    rgba(43, 43, 132, 1) 75%,
+    rgba(29, 209, 240, 1) 96%
+  );
+  /* font-family: sans-serif; */
+  /* color: var(--fondo-card); */
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+}
+
+p {
+  margin: 0;
+}
+
+.img {
+  position: absolute;
+}
+
+.img__left,
+.img__right {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+}
+
+.img__left {
+  top: -12rem;
+  left: -12rem;
+}
+
+.img__right {
+  bottom: -8rem;
+  right: -8rem;
+}
+
+@media (max-width: 768px) {
+  .img__left,
+  .img__right {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .img__left {
+    top: -8rem;
+    left: -8rem;
+  }
+
+  .img__right {
+    bottom: -5rem;
+    right: -5rem;
+  }
+}
+
+.card {
+  position: relative;
+  border: 1px solid black;
+  height: 33rem;
+  width: 29rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+  margin: 0 auto;
+  top: 15vh;
+}
+
+.card__header {
+  background-image: url("../img/fondo-perfil.jpeg");
+  height: 12rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenido__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__text {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card__text--light {
+  color: gray;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.card__text--top {
+  margin: 6rem auto 0.5rem auto;
+}
+
+.img__perfil {
+  position: absolute;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  top: 7rem;
+  border: 5px solid white;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 1rem 0 1rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgb(177, 175, 175);
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__description .card__text {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__description .card__text--light {
+  font-size: 1.5rem;
+}
